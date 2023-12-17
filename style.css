@@ -1,0 +1,83 @@
+/* Estableciendo las fuentes y colores básicos */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #4a69bd;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Estilo de las secciones de contenido */
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo de los artículos */
+article {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 80%;
+    max-width: 800px;
+}
+
+article h2 {
+    color: #4a69bd;
+}
+
+/* Estilo del bloque de código */
+pre {
+    background-color: #eff3f6;
+    border-left: 4px solid #4a69bd;
+    padding: 15px;
+    overflow-x: auto;
+    border-radius: 5px;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95em;
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #4a69bd;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos adicionales para responsividad y elegancia */
+@media (max-width: 768px) {
+    article {
+        width: 90%;
+    }
+}
+
+/* Suavizar las transiciones en los enlaces y botones */
+a, button {
+    transition: background-color 0.3s, color 0.3s;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Ejemplo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AJAX: Asynchronous JavaScript and XML</h1>
+    </header>
+    <section>
+        <article>
+            <h2>¿Qué es AJAX?</h2>
+            <p>AJAX, que significa "Asynchronous JavaScript and XML", es una técnica de desarrollo web para crear aplicaciones interactivas. Permite actualizar partes del contenido de una página web sin recargar toda la página.</p>
+        </article>
+
+        <article>
+            <h2>Ejemplo de Funcionamiento de AJAX</h2>
+            <p>Imagina una aplicación de correo donde puedes marcar mensajes como leídos sin recargar la página. Esto se logra mediante una solicitud AJAX que envía la información al servidor y actualiza la interfaz de usuario en base a la respuesta del servidor.</p>
+        </article>
+
+        <article>
+            <h2>Código de Ejemplo</h2>
+            <pre><code>// Crear un nuevo objeto XMLHttpRequest
+let xhr = new XMLHttpRequest();
+
+// Configurar la solicitud
+xhr.open('GET', 'server-url', true);
+
+// Respuesta del servidor
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+       console.log(xhr.responseText);
+    }
+};
+
+// Enviar la solicitud
+xhr.send();
+            </code></pre>
+        </article>
+    </section>
+    <footer>
+        <p>© Ejemplo AJAX</p>
+    </footer>
+</body>
+</html>
